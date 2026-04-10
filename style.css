@@ -24,14 +24,14 @@ body {
   animation: aparecer 0.8s ease;
 }
 .foto {
-    width: 150px;           /* Tamanho da largura */
-    height: 150px;          /* Tamanho da altura */
-    border-radius: 50%;     /* Deixa a foto redonda */
-    object-fit: cover;      /* Ajusta a foto sem esticar */
-    border: 4px solid #3b82f6; /* Borda azul brilhante */
-    margin: 20px auto;      /* Espaça e centraliza */
-    display: block;         /* Necessário para o centralizar */
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); /* Efeito de brilho */
+    width: 150px;           
+    height: 150px;          
+    border-radius: 50%;     
+    object-fit: cover;      
+    border: 4px solid #3b82f6; 
+    margin: 20px auto;      
+    display: block;        
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); 
 }
 header {
     background: rgba(30, 41, 59, 0.8);
