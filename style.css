@@ -1,43 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
-*{ 
+body {
     margin: 0;
-    padding: 0;
-    border: 0;
-}
-body{background-color: rgb(15, 19, 79);
-}
-     header {
-
-        padding: 32px;
-        border-bottom: 1px solid rgb(19, 41, 139);
-        background-color:rgb(19, 41, 139);
-        margin: 0;
-        padding: 0;
-        border: 0;
-        }
-        header div{
-            text-align: center;/ 
-        }
-        header div a {
-        color: white;
-        font-size: medium;
-        line-height: 0cap;
-        margin:0 16px ;
-        text-decoration: none;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-};
-header div a :hover{
-    color: azure;
-    transition: color 700ms;
-}
-
-#box {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
     text-align: center;
-    padding: 32px;
+    animation: fadeIn 1.5s ease;
 }
 
-#box img{
-    border-radius:50% ;
-    border: 5px solid;
-    margin-bottom: 32p;
+/* ANIMAÇÃO DE ENTRADA */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ .container {
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+  animation: aparecer 0.8s ease;
+}
+.foto {
+    width: 150px;           /* Tamanho da largura */
+    height: 150px;          /* Tamanho da altura */
+    border-radius: 50%;     /* Deixa a foto redonda */
+    object-fit: cover;      /* Ajusta a foto sem esticar */
+    border: 4px solid #3b82f6; /* Borda azul brilhante */
+    margin: 20px auto;      /* Espaça e centraliza */
+    display: block;         /* Necessário para o centralizar */
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); /* Efeito de brilho */
+}
+header {
+    background: rgba(30, 41, 59, 0.8);
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    animation: glow 2s infinite alternate;
+}
+
+/* EFEITO BRILHO NO NOME */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #3b82f6;
+    }
+    to {
+        text-shadow: 0 0 20px #3b82f6;
+    }
+}
+
+.links {
+    margin-top: 15px;
+}
+
+/* BOTÕES COM ANIMAÇÃO */
+.links a {
+    text-decoration: none;
+    color: white;
+    background: #3b82f6;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* HOVER BONITO */
+.links a:hover {
+    background: #2563eb;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #3b82f6;
+}
+
+main {
+    margin-top: 40px;
+    padding: 20px;
+    animation: fadeIn 2s ease;
 }
