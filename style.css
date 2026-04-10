@@ -7,7 +7,6 @@ body {
     animation: fadeIn 1.5s ease;
 }
 
-/* ANIMAÇÃO DE ENTRADA */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -58,7 +57,6 @@ h1 {
     animation: glow 2s infinite alternate;
 }
 
-/* EFEITO BRILHO NO NOME */
 @keyframes glow {
     from {
         text-shadow: 0 0 5px #3b82f6;
@@ -71,8 +69,6 @@ h1 {
 .links {
     margin-top: 15px;
 }
-
-/* BOTÕES COM ANIMAÇÃO */
 .links a {
     text-decoration: none;
     color: white;
@@ -84,7 +80,6 @@ h1 {
     transition: all 0.3s ease;
 }
 
-/* HOVER BONITO */
 .links a:hover {
     background: #2563eb;
     transform: scale(1.1);
